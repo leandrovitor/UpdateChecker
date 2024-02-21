@@ -11,7 +11,7 @@
         Else
 
             Dim web As New Net.WebClient
-            Dim NovaVersao As String = web.DownloadString("http://127.0.0.1:8080/update.txt")
+            Dim NovaVersao As String = web.DownloadString("http://forumup.ddns.net/update.txt")
 
             Timer1.Stop()
 
