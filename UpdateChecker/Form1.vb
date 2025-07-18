@@ -1,4 +1,8 @@
-﻿Public Class Form1
+Imports System.IO
+Imports System.Windows.forms
+
+
+Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Start()
     End Sub
@@ -11,7 +15,7 @@
         Else
 
             Dim web As New Net.WebClient
-            Dim NovaVersao As String = web.DownloadString("http://forumup.ddns.net/update.txt")
+            Dim NovaVersao As String = web.DownloadString("http://l2eva.ddns.net/update.txt")
 
             Timer1.Stop()
 
